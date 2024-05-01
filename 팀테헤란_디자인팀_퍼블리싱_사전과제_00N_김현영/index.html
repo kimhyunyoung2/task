@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://fonts.cdnfonts.com/css/poppins">
+    <link rel="stylesheet" as="style" crossorigin href="https://webfontworld.github.io/gmarket/GmarketSans.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>법률그룹 테헤란 사전과제</title>
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="images/logo.png" alt="바로회생">
+        <div class="menu_wrap">
+            <a class="tel" href="tel:1688-4636">
+                <img src="images/call.png" alt="">
+                <p>365일 전화상담</p>
+            </a>
+            <a href="m_menu">
+                <img src="images/menu.png" alt="">
+            </a>
+        </div>
+    </div>
+    <header>
+        <h1 class="header_title">단, 4번의<br class="br"/> 클릭으로<br class="br"/> 월 변제금 확인</h1>
+        <div class="shape left">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="shape right">
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <section>
+        <div id="content">
+            <div class="left_wrapper">
+                <h2 class="title">
+                    세상에 없던<br/> 월 변제금 <span class="color">바로</span> 조회
+                </h2>
+                <p class="sub">바로회생에서 개발한 월 변제금 바로 확인해보세요.</p>
+                <p class="ex">3천만원의 빚, <span class="">3년동안</span><br/> 
+                    <span class="em">월 상환금 20만원만</span> 내면 청산 완료</p>
+            </div>
+            <div class="right_wrapper">
+                <div class="cont">
+                    <ul class="tabs">
+                        <li class="tab" id="tab1" onclick="showSection('section1')">월 변제금 조회</li>
+                        <li class="tab" id="tab2" onclick="showSection('section2')">변제금이란?</li>
+                    </ul>
+                    <div class="section" id="section1">
+                        <div class="progress_bar_wrap" id="progressBarWrap">
+                            <div class="progress_bar" id="progressBar"></div>
+                        </div>
+                        <form>
+                            <div class="section_cont">
+                                <h2 class="title"><span class="pointer">01</span><br/> 직업의 종류가 어떻게 되시나요?</h2>
+                                <ul>
+                                    <li><input type="radio" id="item1" name="answer1" class="inp_radio"><label for="item1"><p>직장인 <span>(급여소득자)</span></p></label></li>
+                                    <li><input type="radio" id="item2" name="answer1" class="inp_radio"><label for="item2"><p>자영업자 <span>(영업소득자)</span></p></label></li>
+                                    <li><input type="radio" id="item3" name="answer1" class="inp_radio"><label for="item3"><p>일용직 <span>(아르바이트/프리랜서)</span></p></label></li>
+                                    <li><input type="radio" id="item4" name="answer1" class="inp_radio"><label for="item4"><p>기타</p></label></li>
+                                </ul>
+                            </div>
+                            <div class="section_cont number">
+                                <h2 class="title"><span class="pointer">02</span><br/> 월 평균 수입은 얼마인가요?</h2>
+                                <p class="sub">정확한 금액을 입력해 주세요.</p>
+                                <span class="ex">통장에 실제 입금되는 금액 기준(실수령액)</span>
+                                <input type="text" id="inputField" placeholder="251만원" class="inp_num">
+                            </div>
+                            <div class="section_cont">
+                                <h2 class="title"><span class="pointer">03</span><br/> 임시내용</h2>
+                                <ul>
+                                    <li><input type="radio" id="item5" name="answer2" class="inp_radio"><label for="item5"><p>임시내용1</span></p></label></li>
+                                    <li><input type="radio" id="item6" name="answer2" class="inp_radio"><label for="item6"><p>임시내용2</span></p></label></li>
+                                    <li><input type="radio" id="item7" name="answer2" class="inp_radio"><label for="item7"><p>임시내용3</span></p></label></li>
+                                </ul>
+                            </div>
+                            <div class="section_cont">
+                                <h2 class="title"><span class="pointer">04</span><br/> 임시내용</h2>
+                                <ul>
+                                    <li><input type="radio" id="item9" name="answer3" class="inp_radio"><label for="item9"><p>임시내용1</span></p></label></li>
+                                    <li><input type="radio" id="item10" name="answer3" class="inp_radio"><label for="item10"><p>임시내용2</span></p></label></li>
+                                    <li><input type="radio" id="item11" name="answer3" class="inp_radio"><label for="item11"><p>임시내용3</span></p></label></li>
+                                    <li><input type="radio" id="item12" name="answer3" class="inp_radio"><label for="item12"><p>임시내용4</span></p></label></li>
+                                </ul>
+                            </div>
+                            <div class="section_cont">
+                                <div class="springsform_wrapper">
+                                    <h2>
+                                        성함과 연락처, 이메일을 남겨주시면,<br>
+                                        10분 이내 연락드리겠습니다.
+                                    </h2>
+                                    <form name="guestols" id="guestols" action="">
+                                        <input type="hidden" name="type" value="">
+                                        <input type="hidden" name="time" class="springstime">
+                                        <input type="hidden" name="site" value="patent">
+                                        <div class="springsinput_wrapper">
+                                            <label for="name">성명</label>
+                                            <input type="text" name="name" id="self_name" placeholder="성명">
+                                        </div>
+                                        <div class="springsinput_wrapper">
+                                            <label for="phone">휴대전화번호</label>
+                                            <input type="tel" name="phone" id="self_phone" placeholder="휴대전화번호">
+                                        </div>
+                                        <div class="springsinput_wrapper">
+                                            <label for="phone">이메일</label>
+                                            <input type="email" name="email" id="self_email" placeholder="이메일 주소">
+                                        </div>
+                                        <div class="springsbutton_wrapper ga_main_quick ">
+                                            <button class="button_text self_update_check ga_main_quick" data-type="pt">등록가능성 검토 요청</button>
+                                            <div class="first_g"><a href="https://thr-law.co.kr/patent/board/column/view/no/726" target="_blank" class="fg_br">[→ 테헤란 첫 고객 대상 안심등록프로그램 소개]</a></div>
+                                        </div>
+        
+                                        <p class="blue_ment blue_ment1">현재 상황을 객관적으로 분석하여,</p>
+                                        <p class="blue_ment blue_ment2">최적의 결과를 만들어 드립니다.</p>
+                                        <p class="blue_ment blue_ment3">1차 진단 안내시 비용은 따로 청구되지 않으므로,</p>
+                                        <p class="blue_ment blue_ment4">조금 더 편한 마음으로 신청 주셔도 괜찮습니다.</p>
+                                        <p class="blue_ment blue_ment5">감사합니다.</p>
+                                    </form>
+                                    
+                                
+                                </div>
+                                
+                            </div>
+                            <div class="button_container">
+                                <button class="prev">이전</button>
+                                <button class="next">다음</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="section" id="section2" style="display: none;">
+                        <div class="">
+                            남에게 진 빚을 갚는 돈.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_fixed">
+            <button class="qualification">개인회생 <span>자격확인</span></button>
+            <button class="chat">24시간 <span>채팅상담</span></button>
+        </div>
+    </section>
+    <script src="./js/script.js"></script>
+</body>
+</html>
